@@ -17,7 +17,7 @@ import java.util.Map;
 public class DemoApplication {
 
 	public static void main(String[] args) throws IOException {
-		//SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 		String property = System.getProperty("user.dir");
 		property+= File.separator;
 		System.out.println(property);

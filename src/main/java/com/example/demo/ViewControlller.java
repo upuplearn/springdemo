@@ -25,10 +25,10 @@ public class ViewControlller  {
     @ResponseBody
     @PostMapping("postindex")
     @ApiOperation("获取全部数据方法")
-    public Map postindex(@RequestBody  @ApiParam(value = "返回一个对象") Map map, @ApiParam("用户id")  String id) {
+    public String postindex( @ApiParam(value = "返回一个对象") Map map, @ApiParam("用户id")  String id) {
       //  System.out.println(map);
 
-        return  map;
+        return  "访问成功了";
 
     }
 
