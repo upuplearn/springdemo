@@ -3,10 +3,7 @@ package com.fileIo;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -80,9 +77,11 @@ public class FileOut {
     }
     @Test
     public void parentFile(){
-        File f=new File("C:\\HW_SDK_LOG\\parnoc");
+      //  File f=new File("C:\\HW_SDK_LOG\\parnoc");
         //获取文件的父目录地址
-        System.out.println(f.getParentFile());
+      //  System.out.println(f.getParentFile());
+        int length = "beijign".getBytes().length;
+        System.out.println(length);
 
     }
 }

@@ -1,3 +1,4 @@
+/*
 package com.example.demo;
 
 import org.apache.catalina.Context;
@@ -11,10 +12,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class HttpsConfig {
  
-    /**
+    */
+/**
      * spring boot 1.0
-     */
-   /* @Bean
+     *//*
+
+   */
+/* @Bean
     public EmbeddedServletContainerFactory servletContainer() {
         TomcatEmbeddedServletContainerFactory tomcat = new TomcatEmbeddedServletContainerFactory() {
             @Override
@@ -29,12 +33,15 @@ public class HttpsConfig {
         };
         tomcat.addAdditionalTomcatConnectors(httpConnector());
         return tomcat;
-    }*/
+    }*//*
+
  
-    /**
+    */
+/**
      * spring boot 2.0
      * @return
-     */
+     *//*
+
     @Bean
     public TomcatServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
@@ -64,3 +71,4 @@ public class HttpsConfig {
         return connector;
     }
 }
+*/
