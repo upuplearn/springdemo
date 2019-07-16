@@ -4,6 +4,7 @@ import org.apache.commons.beanutils.ConvertUtils;
 import org.junit.Test;
 
 import java.io.*;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -80,8 +81,9 @@ public class FileOut {
       //  File f=new File("C:\\HW_SDK_LOG\\parnoc");
         //获取文件的父目录地址
       //  System.out.println(f.getParentFile());
-        int length = "beijign".getBytes().length;
-        System.out.println(length);
-
+       // int length = "beijign".getBytes().length;
+      //  System.out.println(length);
+        //System.out.println(0x12000001);
+        byte[] array = ByteBuffer.allocate(128).put("D:\\woshitest.json".getBytes()).array();
     }
 }

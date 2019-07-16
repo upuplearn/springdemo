@@ -1,4 +1,4 @@
-/*
+
 package com.example.demo;
 
 import org.apache.catalina.Context;
@@ -11,18 +11,18 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class HttpsConfig {
- 
-    */
-/**
-     * spring boot 1.0
-     *//*
 
-   */
-/* @Bean
+
+    /**
+     * spring boot 1.0
+     */
+
+
+ /*   @Bean
     public EmbeddedServletContainerFactory servletContainer() {
         TomcatEmbeddedServletContainerFactory tomcat = new TomcatEmbeddedServletContainerFactory() {
             @Override
-            protected void postProcessContext(Context  context) {
+            protected void postProcessContext(Context context) {
                 SecurityConstraint constraint = new SecurityConstraint();
                 constraint.setUserConstraint("CONFIDENTIAL");
                 SecurityCollection collection = new SecurityCollection();
@@ -33,14 +33,14 @@ public class HttpsConfig {
         };
         tomcat.addAdditionalTomcatConnectors(httpConnector());
         return tomcat;
-    }*//*
+    }*/
 
- 
-    */
-/**
+
+    /**
      * spring boot 2.0
+     *
      * @return
-     *//*
+     */
 
     @Bean
     public TomcatServletWebServerFactory servletContainer() {
@@ -58,7 +58,7 @@ public class HttpsConfig {
         tomcat.addAdditionalTomcatConnectors(httpConnector());
         return tomcat;
     }
- 
+
     @Bean
     public Connector httpConnector() {
         Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
@@ -71,4 +71,4 @@ public class HttpsConfig {
         return connector;
     }
 }
-*/
+
